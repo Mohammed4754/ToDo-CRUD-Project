@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.container {
+  background-color: teal;
+  /* padding: 50px 300px; */
+  padding: 50px 20%;
+  height: 100vh;
+}
+
+@media (max-width: 765px) {
+  .container {
+    padding: 20px 2%;
+  }
+}
+
+.container .content {
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+  padding-bottom: 20px;
+}
+
+.content .header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 200, 200);
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.content .header h1 {
+  font-size: 18px;
+}
+
+.content .header .add {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: rgb(0, 200, 200);
+  background-color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.content .task {
+  width: 95%;
+  height: 60px;
+  margin: 5px auto 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+}
+
+.content .task:hover {
+  box-shadow: 0px -2px 2px 1px rgb(133, 133, 133);
+}
+
+.task.is-done {
+  /* background-color: rgb(115, 212, 115);*/
+  opacity: 0.5;
+}
+
+.content .task .icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content .task .icons span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content .task .icons .update {
+  background-color: blue;
+}
+
+.content .task .icons .done {
+  background-color: green;
+}
+
+.content .task .icons .not-done {
+  background-color: red;
+}
+
+.content .task .icons .delete {
+  background-color: red;
+}
+
+.content .task .text {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: end;
+  margin-right: 10px;
+  margin-top: 5px;
+}
