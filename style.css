@@ -74,6 +74,17 @@ body {
 .task.is-done {
   /* background-color: rgb(115, 212, 115);*/
   opacity: 0.5;
+  position: relative;
+}
+
+.task.is-done::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  width: 60%;
+  height: 2px;
+  background-color: rgb(48, 48, 48);
 }
 
 .content .task .icons {
@@ -113,4 +124,7 @@ body {
   text-align: end;
   margin-right: 10px;
   margin-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 60%;
 }
